@@ -12,20 +12,30 @@ body {
     box-sizing: border-box;
 }
 
-.cor-destaque {
-    color: #22D4FD;
+.cabecalho {
+    display: flex;
+    padding: 0 15% 0;
 }
 
-.cabecalho {
+.cabecalho__navegacao {
+    display: flex;
+    flex-direction: row;
+    gap: 50px
+}
 
+.cabecalho__navegacao__link {
+    color: var(--color-tertiary);
+    font-family: var(--font-secundary);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 30px 0;
 }
 
 .principal {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    #margin: 10% 15%;
-    padding: 10% 15% 0;
+    padding: 5% 15% 0;
 }
 
 .principal__secao1 {
