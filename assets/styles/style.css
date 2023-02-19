@@ -8,7 +8,6 @@
 body {
     background-color: var(--color-primary);
     color: var(--color-secundary);
-    height: 100vh;
     box-sizing: border-box;
 }
 
@@ -28,19 +27,18 @@ body {
     font-family: var(--font-secundary);
     font-weight: 600;
     text-decoration: none;
-    padding: 30px 0;
+    padding: 35px 0;
 }
 
 .principal {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    padding: 5% 15% 0;
+    padding: 5% 15%;
 }
 
 .principal__secao1 {
     width: 615px;
-    height: 482px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -60,25 +58,41 @@ body {
     font-size: 24px;
     font-family: var(--font-secundary);
     line-height: 36px;
+    text-align: justify;
 }
 
 .principal__secao1__links {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px
 }
 
-.principal__secao1__links > a {
-    background-color: var(--color-tertiary);
-    text-decoration: none;
+.principal__secao1__links__social-title {
+    font-size: 24px;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.principal__secao1__links__social-link {
     width: 280px;
-    border-radius: 16px;
-    padding: 22px 0;
-    text-align: center;
-    color: var(--color-primary);
+    padding: 10px 36px;
+    background-color: var(--color-primary);
+    color: var(--color-secundary);
+    border: 2px solid var(--color-tertiary);
+    border-radius: 8px;
+    text-decoration: none;
     font-family: var(--font-secundary);
     font-size: 24px;
-    line-height: 36px;
     font-weight: 600;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+
+.principal__secao1__links__social-link:hover {
+    background-color: var(--color-quartenary);
 }
 
 .principal__foto {
@@ -88,5 +102,11 @@ body {
 }
 
 .rodape {
-
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--color-tertiary);
+    color: var(--color-primary);
+    font-family: var(--font-secundary);
+    font-weight: 400;
 }
